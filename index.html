@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dezimal/Binär Rechner</title>
-</head>
-<body>
-    <h1>Dezimal / Binär Converter</h1>
-    <form>
-        <label>Binärzahl:</label>
-        <input type="text" id="binary" name="binary" /><br />
-        <label>Dezimalzahl:</label>
-        <input type="text" id="decimal" name="decimal" /><br />
-        <input type="button" id="convert" value="Konvertieren" />
-      </form>  
-      <script src="index.js"></script> 
-</body>
+<html>
+  <head>
+    <title>Binär-/Dezimal-Converter</title>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+  <body>
+    <h1>Binary/Decimal Converter</h1>
+    <input type="text" id="input" />
+    <select id="conversionType">
+      <option value="binaryToDecimal">Binary to Decimal</option>
+      <option value="decimalToBinary">Decimal to Binary</option>
+    </select>
+    <button id="convertButton">Convert</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+  </body>
 </html>
